@@ -3,47 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/style.css">
   <title>CSS Opg 2</title>
 </head>
 <body>
   <div class="wrapper">
-    <header>
-      <h4>MENU</h4>
-      <nav>
-        <h1>Information</h1>
-        <ul>
-          <li>Nyhedsbreve</li>
-          <li>Podcast</li>
-          <li class="pseudo--list">Køb abonnement</li>
+    <header class="header flex">
+      <div class="header__logo flex">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        <h4>MENU</h4>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+      </div>
+      <nav class="header__nav">
+        <h2 class="nav__heading">Information</h2>
+        <ul class="nav__list flex">
+          <li><a href="#">Nyhedsbreve</a></li>
+          <li><a href="#">Podcast</a></li>
+          <li><a href="#" class="pseudo--list">Køb abonnement</a></li>
         </ul>
-        <h4>LOG IN</h4>
       </nav>
+      <div class="header__log flex">
+        <h4>LOG IN</h4>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+      </div>
     </header>
   
-    <main>
-      <section>
-        <p>Abonnement <span>LÆSETEID: 7 MIN</span></p>
-        <h1>Gas er et godt politisk våben. Det er bare ikke Putin, der bruger det</h1>
-        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, illo labore eius neque rerum asperiores praesentium perspiciatis dicta non molestiae ullam in provident sapiente! Obcaecati officiis eligendi autem ducimus nemo, quam sequi sit impedit error. Error praesentium unde voluptatibus! Eius!</p>
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, consequuntur?</p>
-          <img src="https://placehold.co/600x400" alt="placeholdTwo">
+    <main class="width--second">
+      <section class="annonce flex">
+        <img src="https://placehold.co/600x140" alt="placeholdTwo">
+        <p class="annonce--text">Annonce</p>
+      </section>
+      
+      <section class="abonnement grid--two" >
+        <div></div>
+        <div class="">
+          <p class="abonnement__top"><span>Abonnement </span>LÆSETEID: 7 MIN</p>
+          <h1>Gas er et godt politisk våben. Det er bare ikke Putin, der bruger det</h1>
+          <p class="para">Praesentium perspiciatis dicta non molestiae ullam in provident sapiente! Obcaecati officiis eligendi autem ducimus nemo, quam sequi sit impedit error. Error praesentium unde voluptatibus! Eius!</p>
+        </div>
+        <div class="abonnement__peter">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, consequuntur.</p>          
+          <p class="abonnement__camera"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg>Peter Nygaard Christensen</p>
         </div>
         
-        <section class="grid">
-          <h2 id="gridHead">Tksd ddkd our</h2>
-          <article>
-            <img src="https://placehold.co/300x300" alt="placeholdTwo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam distinctio velit tenetur placeat soluta aperiam delectus magnam blanditiis deleniti.</p>
-          </article>
-          
-          <article>
-            <img src="https://placehold.co/300x300" alt="placeholdTwo">
-            <p class="color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam distinctio velit tenetur placeat soluta aperiam delectus magnam blanditiis deleniti.</p>
-          </article>
-        </section>
-  
+        <div class="abonnement__image">
+          <img src="https://placehold.co/200x200" alt="placeholdTwo">
+        </div>
+      </section>
+        
+      <section class="udland grid--two">
+        <div class="udland__left">
+          <h5 class="under--dot">Udland</h5>
+          <div class="ud--left flex">
+            <img  class="udland__image" src="https://placehold.co/30x30" alt="udland image">
+            <div class="udland__jakob">
+              <h6>Jakob Stein</h6>
+              <div class="emailTwitter flex">
+                <p class="flex"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg> Email</p>
+                <p class="flex"><img class="image--style" src="images/twitter.png" alt="">Twitter</p>
+              </div>
+            </div>
+          </div>
+          <div class="udlan__peter">
+            <h6>Peter Nygaard Christensen</h6>
+            <p class="flex"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>Email</p>
+          </div>
+        </div>
+        <div class="udland__right">
+          <div class="right__header flex under--dot">
+            <div class="flex"><svg class="icon--style" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="m612-292 56-56-148-148v-184h-80v216l172 172ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q133 0 226.5-93.5T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160Z"/></svg> <h6>7. maj 2018</h6></div>
+            <div class="flex"><svg class="icon--style" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M240-400h320v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg><h6>Kommentarer (2)</h6></div>
+          </div>
+          <div class="udland__main">
+            <div class="socialicons">
+              <button><i class="fa-brands fa-square-facebook"></i> DEL</button>
+              <button><i class="fa-brands fa-square-twitter"></i> TWEEET</button>
+              <button><i class="fa-solid fa-at"></i> EMAIL</button>
+            </div>
+            <div class="arrow--left"><svg class="arrow--image" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M383-480 200-664l56-56 240 240-240 240-56-56 183-184Zm264 0L464-664l56-56 240 240-240 240-56-56 183-184Z"/></svg><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis eius asperiores voluptatum perspiciatis laborum voluptate officia possimus porro! Deserunt ipsa quidem quisquam amet reiciendis eligendi, saepe praesentium maxime totam cupiditate quo necessitatibus ullam iusto laboriosam earum corrupti, maiores deleniti veniam.Deserunt ipsa quidem quisquam ametCorporis eius asperiores voluptatum perspiciatis laborum voluptate officia possimus porro! Deserunt ipsa quidem quisquam amet reiciendis eligendi, saepe praesentium maxime totam cupiditate quo necessitatibus ullam iusto laboriosam earum corrupti, maiores deleniti veniam. reiciendis eligendi, saepe praesentium maxime totam cupiditate quo necessitatibus</p></div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>

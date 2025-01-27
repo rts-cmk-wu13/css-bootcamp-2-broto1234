@@ -1,0 +1,25 @@
+.abonnement__top {
+  font-size: .6rem;
+  color: var(--clr-gray);
+  margin-block: 1rem;
+}
+
+.abonnement__top span {
+  color: var(--clr-red);
+}
+
+.abonnement__peter {
+  align-self: start;
+  text-align: end;
+}
+
+.abonnement__camera {
+  font-size: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-self: end;
+}
+
+.abonnement__image {
+  height: 10rem;
+}

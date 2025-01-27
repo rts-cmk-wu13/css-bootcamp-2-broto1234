@@ -1,0 +1,32 @@
+.wrapper {
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid--two {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#gridHead {
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.width--second {
+  width: 80%;
+  margin-inline: auto;
+}
