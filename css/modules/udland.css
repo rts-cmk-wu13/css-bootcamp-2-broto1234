@@ -1,0 +1,73 @@
+.udland {
+  margin-block: 1rem;
+  align-items: start;
+}
+
+.udland__left h5 {
+  margin-block-end: 0.8rem;
+}
+
+.image--style {
+  width: 1rem;
+  height: auto;
+}
+
+.ud--left {
+  justify-content: start;
+  gap: 0.3rem;
+}
+
+.udland__image {
+  width: 2rem;
+  border: none;
+  border-radius: 100%;
+}
+
+.udlan__peter {
+  margin-block-start: 0.8rem;
+}
+
+.udlan__peter p {
+  justify-content: start;
+}
+
+.emailTwitter {
+  gap: 0.5rem;
+}
+
+.udland__main {
+  margin-block: 1.7rem;
+  background-image: linear-gradient(white 50%, black);
+
+}
+
+
+.arrow--image {
+  float: left;
+  width: 0.5rem;
+}
+
+.socialicons {
+  gap: 0.2rem;
+  float: right;
+  margin-block-end: 2rem;
+  /* position: absolute;
+  top: 2rem; */
+}
+
+button:first-child {
+  background-color: rgb(2, 2, 98);
+}
+
+button:nth-child(2) {
+  background-color: rgb(35, 153, 237);
+}
+
+button:last-child {
+  background-color: gray;
+}
+
+
+
+
+

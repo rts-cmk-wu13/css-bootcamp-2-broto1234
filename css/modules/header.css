@@ -1,0 +1,29 @@
+.header {
+  width: 100%;
+  padding-block: 1rem;
+  border-bottom: 0.03rem solid rgb(234, 232, 232);
+}
+
+.header__logo {
+  gap: 1rem;
+}
+
+.nav__heading {
+  font-size: 2.3rem;
+  justify-self: center;
+}
+
+.nav__list {
+  justify-content: center;
+  gap: 0.6rem;
+  font-size: 0.5rem;
+}
+
+.pseudo--list {
+  color: var(--clr-red);
+
+}
+
+.pseudo--list:hover {
+  color: blue;
+}

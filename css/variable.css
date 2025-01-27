@@ -1,0 +1,8 @@
+:root {
+
+  --font-para: clamp(0.502rem, 0.3469rem + 2.754vw, 0.8108rem);
+  
+  --clr-red: red;
+  --clr-gray: rgb(177, 175, 175);
+  --clr-black: black;
+}
